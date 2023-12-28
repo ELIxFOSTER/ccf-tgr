@@ -94,33 +94,33 @@ def not_found(e):
 
 
 
-# @app.route('/subscribe', methods=['POST'])
-# def subscribe():
-#     api_key = os.getenv('MAILCHIMP_API_KEY')
-#     audience_id = os.getenv('MAILCHIMP_AUDIENCE_ID')
-#     data_center = os.getenv('MAILCHIMP_DATA_CENTER')
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    api_key = os.getenv('MAILCHIMP_API_KEY')
+    audience_id = os.getenv('MAILCHIMP_AUDIENCE_ID')
+    data_center = os.getenv('MAILCHIMP_DATA_CENTER')
 
-#     print("Received a POST request to /subscribe")
-#     data = request.json
-#     print("Received data:", data)
-#     email = data.get('email')
+    print("Received a POST request to /subscribe")
+    data = request.json
+    print("Received data:", data)
+    email = data.get('email')
 
-#     # Mailchimp API endpoint
-#     endpoint = f'https://{data_center}.api.mailchimp.com/3.0/lists/{audience_id}/members'
+    # Mailchimp API endpoint
+    endpoint = f'https://{data_center}.api.mailchimp.com/3.0/lists/{audience_id}/members'
 
-#     # Create a subscriber object
-#     subscriber = {
-#         'email_address': email,
-#         'status': 'subscribed',  # or 'pending' for double opt-in
-#     }
+    # Create a subscriber object
+    subscriber = {
+        'email_address': email,
+        'status': 'subscribed',  # or 'pending' for double opt-in
+    }
 
-#     # Make a request to Mailchimp API
-#     response = requests.post(endpoint, json=subscriber, auth=('anystring', api_key))
+    # Make a request to Mailchimp API
+    response = requests.post(endpoint, json=subscriber, auth=('anystring', api_key))
 
-#     if response.status_code == 200 or response.status_code == 204:
-#         return jsonify({'success': True}), 200
-#     else:
-#         return jsonify({'success': False}), 500
+    if response.status_code == 200 or response.status_code == 204:
+        return jsonify({'success': True}), 200
+    else:
+        return jsonify({'success': False}), 500
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
