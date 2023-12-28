@@ -9,6 +9,7 @@ exceptiongroup==1.1.0
 filelock==3.13.1
 Flask==2.2.3
 flask_cors==3.0.10
+flask-login==0.6.2
 Flask-Migrate==4.0.4
 Flask-SQLAlchemy==3.0.3
 Flask-WTF==1.1.1
