@@ -18,14 +18,15 @@
 }
 
 #success-box-three {
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 600;
     color: blue;
     /* text-decoration: underline; */
 }
 
 #zoom-reminder {
-    font-size: 30px;
-    color: Red;
+    font-size: 35px;
+    color: blue;
     text-decoration: underline;
 }
 
@@ -33,6 +34,7 @@
 @media (max-width: 390px) {
     .success-wrapper {
         padding: 15px;
+        gap: 10px
     }
 
     #success-box-one {
@@ -44,6 +46,7 @@
 
     #success-box-two {
         font-size: 20px;
+        text-align: center;
 
     }
 

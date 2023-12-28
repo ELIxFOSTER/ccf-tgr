@@ -26,9 +26,9 @@ function SuccessModal() {
 
   return (
     <div className='success-wrapper'>
-      <div id='success-box-one'>YOUR SEAT IS SAVED!</div>
-      <i id='success-box-two'>And Your Email Is On The Way For The Link To Think & Grow Into A Millionaire</i>
-      <div id='zoom-reminder'>Be Sure To Register on <span style={{ color: 'blue' }}>ZOOM</span> Using The Link in The Email</div>
+      <div id='success-box-one'>YOU'RE ALMOST THERE!</div>
+      <i id='success-box-two'>You are steps away from becoming a MILLIONAIRE!</i>
+      <a href='https://us06web.zoom.us/webinar/register/WN_t6t9UNgMQTOuN0Iejrng-g' id='zoom-reminder'>CLICK HERE TO REGISTER ON ZOOM</a>
       <div id='success-box-three'>DECEMBER 29TH AND 30TH <span style={{ color: 'green' }}>@ 7PM EST</span></div>
       <Countdown className='countdown' targetDate={targetDate} />
     </div>
