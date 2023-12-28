@@ -5,6 +5,7 @@ import pfp from "../../images/pfp.jpeg";
 import { subscribeToMailchimp } from "../../store/mailchimp";
 import SuccessModal from "../SuccessModal";
 import AutoOpenModal from "../AutoOpenModal";
+import { useHistory } from 'react-router-dom';
 
 // Import necessary components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +17,7 @@ export default function LandingPage() {
   const [email, setEmail] = useState("");
   const [isModalOpen, setModalOpen] = useState(false);
   const dispatch = useDispatch();
+  const history = useHistory()
 
   const mailchimpState = useSelector((state) => state.mailchimpReducer);
   const isSubscribed = mailchimpState?.subscribed || false;
@@ -43,6 +45,11 @@ export default function LandingPage() {
     setModalOpen(false);
   };
 
+  const handleButtonClick = () => {
+    // Replace the URL with your Zoom webinar registration link
+    const zoomWebinarUrl = 'https://us06web.zoom.us/webinar/register/WN_t6t9UNgMQTOuN0Iejrng-g';
+    window.open(zoomWebinarUrl, '_blank');
+  };
   // Use useEffect to watch for changes in mailchimpState
 
 
@@ -142,7 +149,7 @@ export default function LandingPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 id="form-input"
               />
-              <button id="form-button" type="submit">
+              <button id="form-button" type="submit" onClick={handleButtonClick}>
                 REGISTER HERE
               </button>
             </form>
