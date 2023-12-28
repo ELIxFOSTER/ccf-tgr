@@ -153,6 +153,10 @@
     background-color: rgb(28, 76, 189);
 }
 
+#form-button:hover {
+    cursor: pointer;
+}
+
 
 @media (max-width: 390px) {
     .landing-wrapper {
