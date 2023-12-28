@@ -20,6 +20,11 @@
 #success-box-three {
     font-size: 35px;
     color: blue;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+}
 
+#zoom-reminder {
+    font-size: 30px;
+    color: Red;
+    text-decoration: underline;
 }
