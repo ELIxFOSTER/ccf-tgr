@@ -23,3 +23,11 @@
   background-color:white;
   border-radius: 10px;
 }
+
+
+@media (max-width: 390px) {
+
+  #modal-content {
+    width: 90vw;
+  }
+}

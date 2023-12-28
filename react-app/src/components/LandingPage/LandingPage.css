@@ -152,3 +152,74 @@
     border: 0px;
     background-color: rgb(28, 76, 189);
 }
+
+
+@media (max-width: 390px) {
+    .landing-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #lsc-video {
+        display: none;
+    }
+
+    #pfp {
+        display: none
+    }
+
+    #lfc-first-text {
+        font-size: 35px;
+    }
+
+    #lfc-second-text {
+        font-size: 18px;
+    }
+
+    .landing-third-container {
+        flex-direction: column;
+    }
+
+    .landing-third-container > div:first-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .landing-third-container > div:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #tagr-title {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #ltc-box-one > div:first-child {
+        font-size: 150px;
+    }
+
+    #pfp {
+        width: 100%;
+        height: auto;
+    }
+
+    #profile-text {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .landing-fourth-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    #form-input {
+        width: 100%;
+    }
+}

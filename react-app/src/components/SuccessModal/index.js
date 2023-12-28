@@ -30,7 +30,7 @@ function SuccessModal() {
       <i id='success-box-two'>And Your Email Is On The Way For The Link To Think & Grow Into A Millionaire</i>
       <div id='zoom-reminder'>Be Sure To Register on <span style={{ color: 'blue' }}>ZOOM</span> Using The Link in The Email</div>
       <div id='success-box-three'>DECEMBER 29TH AND 30TH <span style={{ color: 'green' }}>@ 7PM EST</span></div>
-      <Countdown targetDate={targetDate} />
+      <Countdown className='countdown' targetDate={targetDate} />
     </div>
   );
 }

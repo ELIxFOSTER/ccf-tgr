@@ -162,7 +162,7 @@ export default function LandingPage() {
       </div>
       <AutoOpenModal
         modalComponent={<SuccessModal />}
-        openOnSuccess={isModalOpen} // Automatically open on Mailchimp success
+        openOnSuccess={true} // Automatically open on Mailchimp success
       />
     </div>
   );

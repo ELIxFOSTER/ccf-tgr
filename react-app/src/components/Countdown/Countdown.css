@@ -26,3 +26,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 390px) {
+    .countdown-wrapper {
+        display: none
+    }
+  }

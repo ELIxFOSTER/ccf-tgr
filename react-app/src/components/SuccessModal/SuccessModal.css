@@ -28,3 +28,32 @@
     color: Red;
     text-decoration: underline;
 }
+
+
+@media (max-width: 390px) {
+    .success-wrapper {
+        padding: 15px;
+    }
+
+    #success-box-one {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #success-box-two {
+        font-size: 20px;
+
+    }
+
+    #success-box-three {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #zoom-reminder {
+        font-size: 18px;
+        text-align: center;
+    }
+}
