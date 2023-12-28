@@ -118,7 +118,7 @@ export default function LandingPage() {
                 />
                 <div style={{ fontWeight: "600", fontSize: "30px" }}>NOW: </div>
                 <div style={{ fontSize: "25px" }}>
-                  I's Free! What Do You Have to Lose?
+                  It's Free! What Do You Have to Lose?
                 </div>
               </div>
               <div style={{ display: "flex", gap: "20px" }}>
@@ -162,7 +162,7 @@ export default function LandingPage() {
       </div>
       <AutoOpenModal
         modalComponent={<SuccessModal />}
-        openOnSuccess={isModalOpen} // Automatically open on Mailchimp success
+        openOnSuccess={true} // Automatically open on Mailchimp success
       />
     </div>
   );

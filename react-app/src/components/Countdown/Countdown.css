@@ -1,0 +1,28 @@
+.countdown-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#countdown-box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown-box-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown-box-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

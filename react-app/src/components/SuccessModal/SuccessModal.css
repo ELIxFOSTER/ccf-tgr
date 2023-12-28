@@ -1,0 +1,25 @@
+.success-wrapper {
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#success-box-one {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+#success-box-two {
+    font-size: 35px;
+    color: rgb(121, 121, 121);
+}
+
+#success-box-three {
+    font-size: 35px;
+    color: blue;
+    text-decoration: underline;
+
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Countdown.css'
 
 const Countdown = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -6,23 +7,20 @@ const Countdown = ({ targetDate }) => {
     const difference = new Date(targetDate) - now;
 
     if (difference > 0) {
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       return {
-        days,
-        hours,
-        minutes,
-        seconds,
+        hours: String(hours).padStart(2, '0'),
+        minutes: String(minutes).padStart(2, '0'),
+        seconds: String(seconds).padStart(2, '0'),
       };
     } else {
       return {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
+        hours: '00',
+        minutes: '00',
+        seconds: '00',
       };
     }
   };
@@ -40,11 +38,21 @@ const Countdown = ({ targetDate }) => {
   }, [timeLeft]);
 
   return (
-    <div>
-      <div>{timeLeft.days} days</div>
-      <div>{timeLeft.hours} hours</div>
-      <div>{timeLeft.minutes} minutes</div>
-      <div>{timeLeft.seconds} seconds</div>
+    <div className='countdown-wrapper'>
+      <div id='countdown-box-one'>
+        <div>{timeLeft.hours}</div>
+        <div>Hours</div>
+      </div>
+      <div>:</div>
+      <div id='countdown-box-two'>
+        <div>{timeLeft.minutes}</div>
+        <div>Minutes</div>
+      </div>
+      <div>:</div>
+      <div id='countdown-box-three'>
+        <div>{timeLeft.seconds}</div>
+        <div>Seconds</div>
+      </div>
     </div>
   );
 };
